@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Приглашение от Даниила и Александры</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Даниил & Александра</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet" />
   <style>
     body {
       margin: 0;
@@ -51,16 +51,16 @@
       margin-bottom: 10px;
     }
     .response-button {
-      display: block;
-      margin: 30px auto;
       background-color: #ded4c8;
       color: #3e3e3e;
       padding: 12px 24px;
-      border: none;
       font-size: 16px;
+      border: none;
       cursor: pointer;
       border-radius: 8px;
-      text-decoration: none;
+    }
+    form {
+      text-align: center;
     }
     footer {
       text-align: center;
@@ -72,7 +72,7 @@
 </head>
 <body>
   <header>
-    <h1>Приглашение от Даниила и Александры 💍</h1>
+    <h1>Даниил & Александра 💍</h1>
     <p><em>Однажды дружеское «Привет» превратилось в главное «Да» нашей жизни 💞</em></p>
   </header>
 
@@ -99,15 +99,19 @@
   <section>
     <h2>Детали 🎁</h2>
     <ul>
-      <li><strong>🌸 Цветы:</strong> К сожалению, долго наслаждаться букетами не удастся. Если хочется порадовать — будем благодарны бутылочке вина 🍷 или игристого в семейный бар.</li>
       <li><strong>💌 Подарки:</strong> Мы не хотим вас обременять выбором подарка, поэтому будем рады вкладу в семейный бюджет 💖</li>
     </ul>
   </section>
 
   <section>
     <h2>Ответ на приглашение 📲</h2>
-    <p>Пожалуйста, дайте знать, будете ли вы с нами до <strong>15 июля 2025</strong>.</p>
-    <a class="response-button" href="https://t.me/USERNAME">Ответить в Telegram</a>
+    <p>Пожалуйста, дайте знать, будете ли вы с нами до <strong>15 июня 2025</strong>.</p>
+    <form action="https://formsubmit.co/m.julia.v.3@gmail.com" method="POST">
+      <p><label>Вы будете с нами?</label></p>
+      <label><input type="radio" name="response" value="Да, я буду!" required> Да, я буду!</label><br>
+      <label><input type="radio" name="response" value="К сожалению, не смогу"> К сожалению, не смогу</label><br><br>
+      <button type="submit" class="response-button">Отправить</button>
+    </form>
   </section>
 
   <footer>
